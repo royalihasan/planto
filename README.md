@@ -190,6 +190,25 @@ npm run build
 npm start
 ```
 
+### Deploy to Vercel
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically detect Next.js and deploy
+4. Your site will be live at `https://your-project.vercel.app`
+
+### Environment Variables
+Copy `.env.example` to `.env.local` and update the values for your deployment:
+```bash
+cp .env.example .env.local
+```
+
+### Build Fix Applied
+✅ **Fixed Tailwind CSS v4 compatibility issue**
+- Updated to Tailwind CSS v3.4.0 for stable builds
+- Configured proper PostCSS setup
+- Added standard Tailwind configuration
+- Build now works on all deployment platforms
+
 ## 🤝 Contributing
 
 1. Fork the repository
