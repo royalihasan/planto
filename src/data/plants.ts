@@ -1,0 +1,200 @@
+import { Plant, Category } from '@/types';
+
+export const categories: Category[] = [
+  {
+    id: '1',
+    name: 'Indoor Plants',
+    description: 'Perfect for brightening up your living space',
+    image: '/images/categories/indoor.svg',
+    plantCount: 45
+  },
+  {
+    id: '2',
+    name: 'Succulents',
+    description: 'Low-maintenance plants that store water',
+    image: '/images/categories/succulents.svg',
+    plantCount: 28
+  },
+  {
+    id: '3',
+    name: 'Flowering Plants',
+    description: 'Beautiful blooms to add color to your garden',
+    image: '/images/categories/flowering.svg',
+    plantCount: 32
+  },
+  {
+    id: '4',
+    name: 'Herbs',
+    description: 'Fresh herbs for your kitchen garden',
+    image: '/images/categories/herbs.svg',
+    plantCount: 18
+  },
+  {
+    id: '5',
+    name: 'Trees & Shrubs',
+    description: 'Larger plants for outdoor spaces',
+    image: '/images/categories/trees.svg',
+    plantCount: 22
+  }
+];
+
+export const plants: Plant[] = [
+  {
+    id: '1',
+    name: 'Monstera Deliciosa',
+    scientificName: 'Monstera deliciosa',
+    description: 'The Swiss Cheese Plant is a stunning tropical houseplant known for its large, glossy leaves with natural holes. Perfect for adding a tropical feel to any room.',
+    price: 45.99,
+    originalPrice: 59.99,
+    image: '/images/plants/monstera.svg',
+    images: ['/images/plants/monstera.svg', '/images/plants/monstera-2.svg', '/images/plants/monstera-3.svg'],
+    category: 'Indoor Plants',
+    difficulty: 'Easy',
+    lightRequirement: 'Medium',
+    wateringFrequency: 'Weekly',
+    size: '2-3 feet',
+    features: ['Air Purifying', 'Low Maintenance', 'Pet Safe'],
+    inStock: true,
+    stockCount: 15,
+    rating: 4.8,
+    reviewCount: 124
+  },
+  {
+    id: '2',
+    name: 'Snake Plant',
+    scientificName: 'Sansevieria trifasciata',
+    description: 'Also known as Mother-in-Law\'s Tongue, this hardy plant is perfect for beginners. It tolerates low light and infrequent watering.',
+    price: 28.99,
+    image: '/images/plants/snake-plant.svg',
+    images: ['/images/plants/snake-plant.svg', '/images/plants/snake-plant-2.svg'],
+    category: 'Indoor Plants',
+    difficulty: 'Easy',
+    lightRequirement: 'Low',
+    wateringFrequency: 'Bi-weekly',
+    size: '1-2 feet',
+    features: ['Air Purifying', 'Low Light Tolerant', 'Drought Tolerant'],
+    inStock: true,
+    stockCount: 23,
+    rating: 4.9,
+    reviewCount: 89
+  },
+  {
+    id: '3',
+    name: 'Fiddle Leaf Fig',
+    scientificName: 'Ficus lyrata',
+    description: 'A popular statement plant with large, violin-shaped leaves. Creates a stunning focal point in any room with its architectural beauty.',
+    price: 89.99,
+    originalPrice: 109.99,
+    image: '/images/plants/fiddle-leaf-fig.svg',
+    images: ['/images/plants/fiddle-leaf-fig.svg', '/images/plants/fiddle-leaf-fig-2.svg'],
+    category: 'Indoor Plants',
+    difficulty: 'Medium',
+    lightRequirement: 'High',
+    wateringFrequency: 'Weekly',
+    size: '4-6 feet',
+    features: ['Statement Plant', 'Air Purifying', 'Large Leaves'],
+    inStock: true,
+    stockCount: 8,
+    rating: 4.6,
+    reviewCount: 156
+  },
+  {
+    id: '4',
+    name: 'Jade Plant',
+    scientificName: 'Crassula ovata',
+    description: 'A classic succulent with thick, glossy leaves. Known as the "Money Tree" and believed to bring good luck and prosperity.',
+    price: 19.99,
+    image: '/images/plants/jade-plant.svg',
+    images: ['/images/plants/jade-plant.svg', '/images/plants/jade-plant-2.svg'],
+    category: 'Succulents',
+    difficulty: 'Easy',
+    lightRequirement: 'Medium',
+    wateringFrequency: 'Monthly',
+    size: '6-12 inches',
+    features: ['Good Luck Symbol', 'Low Maintenance', 'Long-lived'],
+    inStock: true,
+    stockCount: 35,
+    rating: 4.7,
+    reviewCount: 67
+  },
+  {
+    id: '5',
+    name: 'Peace Lily',
+    scientificName: 'Spathiphyllum',
+    description: 'Elegant flowering plant with glossy green leaves and beautiful white blooms. Excellent air purifier and low light tolerant.',
+    price: 34.99,
+    image: '/images/plants/peace-lily.svg',
+    images: ['/images/plants/peace-lily.svg', '/images/plants/peace-lily-2.svg'],
+    category: 'Flowering Plants',
+    difficulty: 'Easy',
+    lightRequirement: 'Low',
+    wateringFrequency: 'Weekly',
+    size: '1-2 feet',
+    features: ['Air Purifying', 'Flowering', 'Low Light Tolerant'],
+    inStock: true,
+    stockCount: 19,
+    rating: 4.5,
+    reviewCount: 92
+  },
+  {
+    id: '6',
+    name: 'Basil',
+    scientificName: 'Ocimum basilicum',
+    description: 'Fresh, aromatic herb perfect for cooking. Easy to grow indoors or outdoors. Pinch leaves regularly for continuous harvest.',
+    price: 12.99,
+    image: '/images/plants/basil.svg',
+    images: ['/images/plants/basil.svg', '/images/plants/basil-2.svg'],
+    category: 'Herbs',
+    difficulty: 'Easy',
+    lightRequirement: 'High',
+    wateringFrequency: '2-3 times per week',
+    size: '6-12 inches',
+    features: ['Edible', 'Aromatic', 'Fast Growing'],
+    inStock: true,
+    stockCount: 42,
+    rating: 4.8,
+    reviewCount: 38
+  },
+  {
+    id: '7',
+    name: 'Rubber Tree',
+    scientificName: 'Ficus elastica',
+    description: 'Glossy, dark green leaves make this plant a beautiful addition to any space. Known for its air-purifying qualities and easy care.',
+    price: 52.99,
+    image: '/images/plants/rubber-tree.svg',
+    images: ['/images/plants/rubber-tree.svg', '/images/plants/rubber-tree-2.svg'],
+    category: 'Indoor Plants',
+    difficulty: 'Easy',
+    lightRequirement: 'Medium',
+    wateringFrequency: 'Weekly',
+    size: '3-4 feet',
+    features: ['Air Purifying', 'Glossy Leaves', 'Easy Care'],
+    inStock: true,
+    stockCount: 12,
+    rating: 4.7,
+    reviewCount: 73
+  },
+  {
+    id: '8',
+    name: 'Aloe Vera',
+    scientificName: 'Aloe barbadensis',
+    description: 'Medicinal succulent with healing properties. The gel inside the leaves can be used for burns and skin care. Very low maintenance.',
+    price: 16.99,
+    image: '/images/plants/aloe-vera.svg',
+    images: ['/images/plants/aloe-vera.svg', '/images/plants/aloe-vera-2.svg'],
+    category: 'Succulents',
+    difficulty: 'Easy',
+    lightRequirement: 'High',
+    wateringFrequency: 'Bi-weekly',
+    size: '8-16 inches',
+    features: ['Medicinal', 'Drought Tolerant', 'Easy Care'],
+    inStock: true,
+    stockCount: 28,
+    rating: 4.6,
+    reviewCount: 54
+  }
+];
+
+export const featuredPlants = plants.slice(0, 4);
+export const bestSellers = plants.filter(plant => plant.rating >= 4.7);
+export const onSale = plants.filter(plant => plant.originalPrice);
